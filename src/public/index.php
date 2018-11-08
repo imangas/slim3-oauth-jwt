@@ -1,7 +1,9 @@
 <?php
-$date = new DateTime();
-$day = $date->format('d');
-$month = $date->format('M');
-$year = $date->format('Y');
 
-echo "Today is: ${day} ${month} ${year}";
+define('ENVIRONMENT', getenv("ENVIRONMENT"));
+define('ROOT_PATH', dirname(__DIR__));
+define('CONFIG_PATH', ROOT_PATH."/Config");
+define('VENDOR_PATH', dirname(ROOT_PATH)."/vendor");
+define('SECRET_JWT', getenv("SECRET_JWT"));
+
+require ROOT_PATH. '/App/app.php';
