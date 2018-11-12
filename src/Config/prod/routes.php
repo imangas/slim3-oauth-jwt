@@ -7,4 +7,3 @@ $app->get('/', function (Request $request, Response $response, $args) {
         ->write('Welcome to you API')
         ->withStatus(200);
 });
-

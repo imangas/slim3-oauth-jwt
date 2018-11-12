@@ -9,7 +9,6 @@ try {
 
     require "{$config_path}/routes.php";
     $app->run();
-
 } catch (\Exception $e) {
     die("This website is under maintenance.<br>Please retry later");
 }
